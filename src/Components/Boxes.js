@@ -4,8 +4,8 @@ import styles from './styles.module.css';
 const Boxes = (props) => {
     return ( 
         <div className="row">{
-            props.boxes.map((color, i) =>
-                <div key={i} className={styles.box} style={{backgroundColor:color}}></div>
+            props.boxes.map((box, i) =>
+                <div key={i} className={styles.box} style={{backgroundColor:box.color, height:box.height, width: box.height}}></div>
             )
         }
         </div>

@@ -6,10 +6,10 @@ import Boxes from './Components/Boxes';
 function App() {
   const [boxes, setBoxes] = useState([]);
 
-  const addBox = (color) => {
+  const addBox = (color, height) => {
     setBoxes([
       ...boxes,
-      color
+      {color: color, height: height + "px"}
     ]);
     console.log(boxes);
   }
